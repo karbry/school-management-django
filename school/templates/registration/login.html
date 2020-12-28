@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Name</title>
+    </head>
+
+    <body>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+        <button>login</button>
+        </form>
+    </body>
+</html>

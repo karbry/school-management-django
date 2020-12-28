@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Name</title>
+    </head>
+
+    <body>
+        {% if user.is_authenticated %}
+        <h1>Hello, {{user.username}}</h1>
+        <h1>your group: </h1>
+        <ul>
+    
+                <li>
+                    <strong>{{ user.groups.all.0.name }}<strong> -
+                </li>
+
+            </ul>     
+        
+        <a href="{% url 'logout' %}">Logout</a>
+        {% endif %}
+    </body>
+</html>
